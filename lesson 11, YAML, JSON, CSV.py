@@ -24,6 +24,7 @@ with open(r'connections.yaml', 'w') as file:
 with open(r'connections.yaml') as file:
     connections = yaml.load(file, Loader=yaml.FullLoader)
     print(connections)
+print('______________________________________________________________________')
 
 # JSON
 import json
@@ -48,3 +49,32 @@ with open('sample.json', 'r') as openfile:
     json_object = json.load(openfile)
 
 print(json_object)
+
+print('______________________________________________________________________')
+#csv
+
+import pandas as pd
+
+c_connections=[
+    {
+        "user_name": "elt_user",
+        "password": "123",
+        'host': '127.0.0.1'
+    },
+    {
+        "user_name": "test",
+        "password": "456",
+        'host': '127.0.0.1'
+    }
+]
+
+df1=pd.DataFrame(c_connections)
+print(df1)
+print(type(df1))
+
+df1.to_csv('from_pd.csv', index=False)
+print('______________________________________________________________________')
+
+df2 = pd.read_csv('from_pd.csv')
+print(df2)
+print(type(df1))
