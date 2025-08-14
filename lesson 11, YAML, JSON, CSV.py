@@ -78,3 +78,71 @@ print('______________________________________________________________________')
 df2 = pd.read_csv('from_pd.csv')
 print(df2)
 print(type(df1))
+
+#DZ
+
+class Humans:
+    humans_info=[
+        {"Name":"Bob",
+         "age":25
+        },
+        {"Name":"Ivan",
+         "age":42
+        }
+    ]
+    def __init__(self,name):
+        self.humans_info=[
+        {"Name":"Bob",
+         "age":25
+        },
+        {"Name":"Ivan",
+         "age":42
+        }]
+        self.name=name
+
+    def get_info(self):
+        return self.humans_info
+
+    def sava_yaml(self):
+        with open(self.name, 'w') as file:
+            dz = yaml.dump(self.humans_info, file)
+
+    def read_yaml(self):
+        with open(self.name, 'r') as file:
+            dz = yaml.load(file, Loader=yaml.FullLoader)
+            print(dz)
+
+
+Russia=Humans('dz_test.yaml')
+print(Russia.get_info())
+Russia.sava_yaml()
+Russia.read_yaml()
+
+class jsonchik:
+    listichik=[]
+
+    def __init__(self,name):
+        self.listichik=[{
+            'Gay': 'yes',
+            'Natural': 'no'
+        },
+            {'No gay': 'yes',
+             'No natural': 'no'}]
+        self.name=name
+
+        self.json_object = json.dumps(self.listichik, indent=1)
+
+    def save_json(self):
+         with open(self.name, 'w') as outfile:
+            outfile.write(self.json_object)
+
+    def read_json(self):
+        with open(self.name, 'r') as openfile:
+            json_object = jsson.load(openfile)
+            print(json_object)
+
+Testim=jsonchik('testim.json')
+Testim.save_json()
+Testim.read_json()
+
+
