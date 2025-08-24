@@ -1,16 +1,16 @@
 import requests
 from requests.auth import HTTPBasicAuth
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from geopy.geocoders import Nominatim
-from wether_project.config import config
-from wether_project.utils.csv_reader import read_city_names
+from utils.csv_reader import read_city_names
+
 
 
 
 class WeatherFetcher:
     def __init__(self):
-        self.username = config.username
-        self.password = config.API
+        self.username = 'miniroc_mueller_daniel'
+        self.password = 'HPq667K7WH2IsoX968ks'
         self.parameter = "t_2m:C"
         self.geolocator = Nominatim(user_agent="weather_app")
 
@@ -20,7 +20,7 @@ class WeatherFetcher:
             return f"{city_name}: не удалось найти координаты"
 
         lat, lon = location.latitude, location.longitude
-        date = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
+        date = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         url = f"https://api.meteomatics.com/{date}/{self.parameter}/{lat},{lon}/json"
 
         response = requests.get(url, auth=HTTPBasicAuth(self.username, self.password), timeout=10)
@@ -32,7 +32,7 @@ class WeatherFetcher:
         else:
             return f"{city_name}: Ошибка {response.status_code}"
 
-    def get_weather_from_csv(self, filename=r"C:\Users\dm440\OneDrive\Рабочий стол\lessons_DE-from-Digitalberd\wether_project\utils\cities.csv"):
+    def get_weather_from_csv(self, filename=r"utils\cities.csv"):
         cities = read_city_names(filename)
         results = []
         for city in cities:

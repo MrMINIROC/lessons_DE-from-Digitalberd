@@ -1,18 +1,26 @@
-from wether_project.utils.requests_sender import WeatherFetcher
-from wether_project.utils.cities import Cities
-from wether_project.utils.csv_writer import write_pd
+from utils.requests_sender import WeatherFetcher
+from utils.cities import Cities
+from utils.csv_writer import write_pd
+import pandas as pd
+from datetime import datetime
+
 citys=Cities()
-citys.add_city('Praga')
-citys.add_city('Tunis')
+citys.add_city('Berlin')
 citys.add_city('Sosnogorsk')
 citys.add_city('Moscow')
+citys.add_city('Voronezh')
 
 write_pd(citys)
 
 def main():
     wf = WeatherFetcher()
-    results = wf.get_weather_from_csv(r"C:\Users\dm440\OneDrive\Рабочий стол\lessons_DE-from-Digitalberd\wether_project\utils\cities.csv")
+    results = wf.get_weather_from_csv(r"utils\cities.csv")
     for r in results:
         print(r)
+    return results
 
-main()
+log='/home/wether_project/logs'
+results=main()
+df=pd.DataFrame(results)
+now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+df.to_csv(f'{log}/{now}.csv', index=False)

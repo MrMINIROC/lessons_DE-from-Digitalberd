@@ -1,0 +1,289 @@
+Praga: 14.9°C
+Tunis: 27.6°C
+Sosnogorsk: 8.2°C
+Moscow: 12.0°C
+Voronezh: 20.6°C
+Traceback (most recent call last):
+  File "/home/wether_project/main.py", line 27, in <module>
+    df.to_csv(rf'logs/{now}.csv', index=False)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/core/generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'logs'
+Praga: 14.9°C
+Tunis: 27.6°C
+Sosnogorsk: 8.2°C
+Moscow: 12.0°C
+Voronezh: 20.6°C
+Traceback (most recent call last):
+  File "/home/wether_project/main.py", line 27, in <module>
+    df.to_csv(rf'logs/{now}.csv', index=False)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/core/generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'logs'
+Praga: 14.4°C
+Tunis: 27.5°C
+Sosnogorsk: 8.1°C
+Moscow: 11.9°C
+Voronezh: 20.6°C
+Traceback (most recent call last):
+  File "/home/wether_project/main.py", line 27, in <module>
+    df.to_csv(rf'logs/{now}.csv', index=False)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pandas/core/generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/usr/local/lib/python3.10/dist-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'logs'
+Praga: 14.7°C
+Tunis: 27.4°C
+Sosnogorsk: 8.1°C
+Moscow: 11.9°C
+Voronezh: 20.7°C
+Praga: 14.6°C
+Tunis: 27.3°C
+Sosnogorsk: 8.1°C
+Moscow: 11.8°C
+Voronezh: 20.8°C
+Praga: 14.2°C
+Tunis: 26.8°C
+Sosnogorsk: 8.1°C
+Moscow: 11.7°C
+Voronezh: 20.7°C
+Praga: 13.2°C
+Tunis: 26.4°C
+Sosnogorsk: 8.0°C
+Moscow: 11.3°C
+Voronezh: 19.5°C
+Praga: 12.7°C
+Tunis: 26.1°C
+Sosnogorsk: 7.9°C
+Moscow: 11.2°C
+Voronezh: 18.9°C
+Praga: 13.2°C
+Tunis: 25.8°C
+Sosnogorsk: 7.8°C
+Moscow: 11.2°C
+Voronezh: 17.8°C
+Praga: 13.3°C
+Tunis: 25.4°C
+Sosnogorsk: 8.9°C
+Moscow: 11.0°C
+Voronezh: 17.6°C
+Praga: 13.1°C
+Tunis: 25.0°C
+Sosnogorsk: 10.3°C
+Moscow: 11.1°C
+Voronezh: 18.6°C
+Praga: 13.5°C
+Tunis: 24.7°C
+Sosnogorsk: 12.5°C
+Moscow: 11.5°C
+Voronezh: 19.7°C
+Praga: 14.2°C
+Tunis: 25.7°C
+Sosnogorsk: 13.6°C
+Moscow: 12.6°C
+Voronezh: 19.3°C
+Praga: 15.2°C
+Tunis: 27.6°C
+Sosnogorsk: 15.1°C
+Moscow: 13.8°C
+Voronezh: 21.7°C
+Praga: 15.9°C
+Tunis: 29.7°C
+Sosnogorsk: 15.8°C
+Moscow: 14.7°C
+Voronezh: 21.4°C
+Praga: 17.0°C
+Tunis: 31.4°C
+Sosnogorsk: 16.5°C
+Moscow: 15.6°C
+Voronezh: 20.4°C
+Praga: 18.8°C
+Tunis: 33.1°C
+Sosnogorsk: 16.8°C
+Moscow: 16.3°C
+Voronezh: 21.6°C
+Praga: 20.1°C
+Tunis: 34.3°C
+Sosnogorsk: 17.0°C
+Moscow: 16.8°C
+Voronezh: 24.0°C
+Praga: 19.6°C
+Tunis: 35.5°C
+Sosnogorsk: 17.0°C
+Moscow: 16.2°C
+Voronezh: 24.7°C
+Praga: 19.7°C
+Tunis: 36.1°C
+Sosnogorsk: 16.7°C
+Moscow: 16.4°C
+Voronezh: 22.6°C
+Praga: 17.7°C
+Tunis: 36.3°C
+Sosnogorsk: 16.1°C
+Moscow: 16.4°C
+Voronezh: 20.5°C
+Praga: 18.0°C
+Tunis: 34.9°C
+Sosnogorsk: 14.6°C
+Moscow: 16.3°C
+Voronezh: 19.2°C
+Praga: 18.0°C
+Tunis: 33.2°C
+Sosnogorsk: 12.4°C
+Moscow: 15.9°C
+Voronezh: 17.6°C
+Praga: 15.2°C
+Tunis: 32.5°C
+Sosnogorsk: 11.1°C
+Moscow: 15.2°C
+Voronezh: 17.1°C
+Praga: 15.9°C
+Tunis: 30.9°C
+Sosnogorsk: 10.2°C
+Moscow: 14.8°C
+Voronezh: 15.1°C
+Praga: 14.4°C
+Tunis: 29.4°C
+Sosnogorsk: 9.2°C
+Moscow: 14.5°C
+Voronezh: 14.8°C
+Praga: 14.2°C
+Tunis: 28.4°C
+Sosnogorsk: 8.5°C
+Moscow: 14.1°C
+Voronezh: 14.3°C
+Praga: 13.1°C
+Tunis: 27.9°C
+Sosnogorsk: 7.5°C
+Moscow: 13.4°C
+Voronezh: 14.0°C
+Praga: 12.4°C
+Tunis: 27.1°C
+Sosnogorsk: 7.1°C
+Moscow: 13.3°C
+Voronezh: 13.8°C
+Berlin: 11.4°C
+Sosnogorsk: 6.5°C
+Moscow: 12.8°C
+Voronezh: 13.5°C
+Berlin: 11.0°C
+Sosnogorsk: 5.5°C
+Moscow: 10.6°C
+Voronezh: 13.2°C
+Berlin: 10.7°C
+Sosnogorsk: 5.4°C
+Moscow: 10.3°C
+Voronezh: 12.7°C
+Berlin: 10.4°C
+Sosnogorsk: 6.2°C
+Moscow: 9.9°C
+Voronezh: 12.3°C
+Berlin: 10.1°C
+Sosnogorsk: 8.3°C
+Moscow: 9.7°C
+Voronezh: 12.1°C
+Berlin: 9.7°C
+Sosnogorsk: 11.1°C
+Moscow: 10.6°C
+Voronezh: 12.9°C
+Berlin: 10.0°C
+Sosnogorsk: 14.2°C
+Moscow: 12.4°C
+Voronezh: 14.1°C
+Berlin: 10.3°C
+Sosnogorsk: 16.0°C
+Moscow: 14.2°C
+Voronezh: 15.4°C
+Berlin: 12.0°C
+Sosnogorsk: 17.2°C
+Moscow: 15.5°C
+Voronezh: 16.9°C
+Berlin: 13.8°C
+Sosnogorsk: 17.7°C
+Moscow: 16.6°C
+Voronezh: 18.1°C
+Berlin: 15.4°C
+Sosnogorsk: 17.8°C
+Moscow: 17.1°C
+Voronezh: 19.0°C
+Berlin: 17.2°C
+Sosnogorsk: 17.6°C
+Moscow: 17.3°C
+Voronezh: 19.1°C
+Berlin: 17.3°C
+Sosnogorsk: 16.4°C
+Moscow: 17.6°C
+Voronezh: 19.1°C
+Berlin: 18.3°C
+Sosnogorsk: 16.3°C
+Moscow: 18.1°C
+Voronezh: 19.4°C
+Berlin: 17.8°C
+Sosnogorsk: 15.1°C
+Moscow: 18.0°C
+Voronezh: 19.8°C
+Berlin: 18.4°C
+Sosnogorsk: 14.2°C
+Moscow: 17.1°C
+Voronezh: 19.6°C
+Berlin: 17.9°C
+Sosnogorsk: 13.5°C
+Moscow: 16.7°C
+Voronezh: 18.4°C
+Berlin: 17.5°C
+Sosnogorsk: 13.1°C
+Moscow: 15.9°C
+Voronezh: 16.8°C
+Berlin: 16.9°C
+Sosnogorsk: 12.3°C
+Moscow: 14.7°C
+Voronezh: 15.3°C
+Berlin: 15.8°C
+Sosnogorsk: 11.4°C
+Moscow: 13.6°C
+Voronezh: 14.5°C
+Berlin: 15.1°C
+Sosnogorsk: 11.4°C
+Moscow: 13.0°C
+Voronezh: 14.1°C
+Berlin: 15.3°C
+Sosnogorsk: 11.2°C
+Moscow: 12.6°C
+Voronezh: 13.7°C
+Berlin: 14.9°C
+Sosnogorsk: 11.0°C
+Moscow: 11.8°C
+Voronezh: 13.2°C
+Berlin: 13.8°C
+Sosnogorsk: 11.2°C
+Moscow: 11.0°C
+Voronezh: 12.6°C
